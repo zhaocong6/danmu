@@ -1,1 +1,1 @@
-# danmu
+五分钟快速搭建一个很low的实时弹幕系统:swoole+websocket+redis
