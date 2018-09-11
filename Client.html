@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    var ws = new WebSocket('ws://127.0.0.1:9505');
+    ws.onopen = function (ev) {
+        ws.send('');
+    };
+    ws.onmessage = function (ev) {
+        console.log('服务器返回信息:'+ev.data);
+    };
+    ws.onclose = function (ev) {
+        console.log('链接关闭');
+    };
+</script>
